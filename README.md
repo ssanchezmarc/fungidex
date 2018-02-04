@@ -1,4 +1,4 @@
-# Fungidex
+# Fungidex :mushroom:
 
 Katta 型 to practice with **React** + **Redux**
 
