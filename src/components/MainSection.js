@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { MushroomsList } from './MushroomsList';
-// import FilterPokemon from './FilterPokemon';
+import { FilterMushrooms}  from './FilterMushrooms';
 
 export class MainSection extends Component {
   // static propTypes = {
@@ -14,21 +14,15 @@ export class MainSection extends Component {
     return (
       <section className="main">
         <h1>Fingudex in Redux</h1>
+        <FilterMushrooms
+          // searchTerm={searchTerm}
+          // actions={actions}
+          />
         <MushroomsList
           // pokemon={pokemon}
           // caughtPokemon={caughtPokemon}
           // actions={actions}
           />
-
-        {/* <FilterPokemon
-          searchTerm={searchTerm}
-          actions={actions} />
-
-        <PokemonList
-          pokemon={pokemon}
-          caughtPokemon={caughtPokemon}
-          actions={actions} /> */}
-
       </section>
     );
   }
