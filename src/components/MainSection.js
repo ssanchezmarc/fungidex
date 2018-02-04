@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-// import PokemonList from './PokemonList';
+import { MushroomsList } from './MushroomsList';
 // import FilterPokemon from './FilterPokemon';
 
 export class MainSection extends Component {
@@ -14,6 +14,11 @@ export class MainSection extends Component {
     return (
       <section className="main">
         <h1>Fingudex in Redux</h1>
+        <MushroomsList
+          // pokemon={pokemon}
+          // caughtPokemon={caughtPokemon}
+          // actions={actions}
+          />
 
         {/* <FilterPokemon
           searchTerm={searchTerm}
