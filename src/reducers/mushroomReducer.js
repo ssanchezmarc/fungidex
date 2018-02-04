@@ -2,8 +2,7 @@ import { initialState } from "./initialState";
 import { SEARCH_INPUT_CHANGED, MARK_CAUGHT } from '../constants/ActionTypes';
 import { Mushrooms } from '../data/mushrooms';
 
-export default function mushroom(state = initialState, action) {
-
+export default const mushroom = (state = initialState, action) => {
   var doFilter = (searchTerm=state.searchTerm, filters=state.filterOptions) => {
     var filtered = Mushrooms;
     if (searchTerm) {
