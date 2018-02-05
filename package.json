@@ -1,18 +1,29 @@
 {
   "name": "fungidex",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "Katta with React + Redux",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssanchezmarc/fungidex.git"
+  },
+  "keywords": ["react", "redux"],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssanchezmarc/fungidex/issues"
+  },
+  "homepage": "https://github.com/ssanchezmarc/fungidex#readme",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-scripts": "1.1.0",
     "redux": "^3.7.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
   }
 }
