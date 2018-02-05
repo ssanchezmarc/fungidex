@@ -1,8 +1,8 @@
-import React, { Component, PropTypes } from "react";
+import React, { Component } from "react";
 
 export class FilterMushrooms extends Component {
   render() {
-    // const {searchTerm, actions} = this.props;
+    const { searchTerm, actions } = this.props;
 
     return (
       <form>
@@ -12,8 +12,8 @@ export class FilterMushrooms extends Component {
             type="text"
             name="search"
             placeholder="Search Fungidex"
-            // value={searchTerm}
-            // onChange={e => actions.searchTermChanged(e.target.value)}
+            value={searchTerm}
+            onChange={e => actions.searchTermChanged(e.target.value)}
           />
         </div>
       </form>

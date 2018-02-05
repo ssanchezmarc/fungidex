@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
-import { mushroom } from "./mushroomReducer";
+import { mushrooms } from "./mushroomReducer";
 
 export const rootReducer = combineReducers({
-  mushroom
+  mushrooms
 });

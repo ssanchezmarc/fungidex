@@ -1,13 +1,10 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from "react";
 
-import { MushroomItem } from './MushroomItem';
-
-import { Mushrooms } from '../data/mushrooms';
+import { MushroomItem } from "./MushroomItem";
 
 export class MushroomsList extends Component {
   render() {
-    // const {pokemon, caughtPokemon, actions} = this.props;
-
+    const { mushrooms, caughtMushrooms, actions } = this.props;
     return (
       <table className="table table-striped">
         <thead>
@@ -19,15 +16,15 @@ export class MushroomsList extends Component {
           </tr>
         </thead>
         <tbody>
-          {Mushrooms.map(mushroomObject =>
+          {mushrooms.map(mushroomObject => (
             <MushroomItem
               key={mushroomObject.name}
               mushroom={mushroomObject}
               caught={false}
-              // caught={caughtPokemon.indexOf(mushroomObject.name) > -1}
-              // actions={actions}
+              caught={caughtMushrooms.indexOf(mushroomObject.name) > -1}
+              actions={actions}
             />
-          )}
+          ))}
         </tbody>
       </table>
     );
