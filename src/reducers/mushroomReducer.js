@@ -1,5 +1,5 @@
 import { initialState } from "./initialState";
-import { SEARCH_INPUT_CHANGED, MARK_CAUGHT } from "../constants/ActionTypes";
+import { SEARCH_INPUT_CHANGED, MARK_CAUGHT } from "../actions/actionTypes";
 import { Mushrooms } from "../data/mushrooms";
 
 export const mushroom = (state = initialState, action) => {
