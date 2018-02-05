@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from "react";
 
 export class FilterMushrooms extends Component {
   render() {
@@ -11,10 +11,10 @@ export class FilterMushrooms extends Component {
             className="form-control"
             type="text"
             name="search"
-            placeholder="Search Pokedex"
+            placeholder="Search Fungidex"
             // value={searchTerm}
             // onChange={e => actions.searchTermChanged(e.target.value)}
-            />
+          />
         </div>
       </form>
     );
